@@ -1,0 +1,29 @@
+{
+  "name": "@deanacus/jest-reporter",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Custom Jest Reporter with minimal output",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:deanacus/config.git"
+  },
+  "homepage": "https://github.com/deanacus/config/packages/jest-reporter",
+  "bugs": {
+    "url": "https://github.com/deanacus/config/issues"
+  },
+  "main": "dist",
+  "types": "dist/index.d.ts",
+  "scripts": {},
+  "dependencies": {
+    "chalk": "^4.1.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "peerDependencies": {
+    "jest": ">=26.6.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

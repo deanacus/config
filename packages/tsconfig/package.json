@@ -1,0 +1,23 @@
+{
+  "name": "@deanacus/tsconfig",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "My personal preferred typescript configuration",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:deanacus/config.git"
+  },
+  "homepage": "https://github.com/deanacus/config/packages/tsconfig",
+  "bugs": {
+    "url": "https://github.com/deanacus/config/issues"
+  },
+  "main": "tsconfig.json",
+  "scripts": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "typescript": ">=4.1.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@deanacus/eslint-config",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "My personal preferred eslint configuration",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:deanacus/config.git"
+  },
+  "homepage": "https://github.com/deanacus/config/packages/eslint",
+  "bugs": {
+    "url": "https://github.com/deanacus/config/issues"
+  },
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "read-pkg-up": "^7.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.x.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

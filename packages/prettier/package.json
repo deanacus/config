@@ -1,0 +1,25 @@
+{
+  "name": "@deanacus/prettier-config",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "My personal preferred prettier configuration",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:deanacus/config.git"
+  },
+  "homepage": "https://github.com/deanacus/config/packages/prettier",
+  "bugs": {
+    "url": "https://github.com/deanacus/config/issues"
+  },
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "peerDependencies": {
+    "prettier": ">=2.2.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

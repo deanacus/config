@@ -1,10 +1,12 @@
+import type { RuleSet } from '..';
+
 /**
  * The Commitlint rules that define the standards for
  * commit type - that is the very first word on the very
  * first line of the commit.
  */
 
-module.exports = {
+export const type: RuleSet = {
   // Commit type is one of
   'type-enum': [
     2,

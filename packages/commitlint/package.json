@@ -11,13 +11,37 @@
   "bugs": {
     "url": "https://github.com/deanacus/config/issues"
   },
-  "main": "index.js",
-  "scripts": {},
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "coverage": "jest --coverage",
+    "lint": "eslint",
+    "test": "jest",
+    "type": "tsc --noEmit"
+  },
+  "jest": {
+    "preset": "ts-jest/presets/js-with-ts",
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    }
+  },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0"
+    "@commitlint/lint": "^12.1.1",
+    "@commitlint/utils": "^9.0.1",
+    "eslint": "^7.23.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.3"
   },
   "peerDependencies": {
-    "@commitlint/cli": ">=11.0.0"
+    "@commitlint/lint": "^12.1.1",
+    "@commitlint/utils": "^9.0.1"
   },
   "publishConfig": {
     "access": "public"

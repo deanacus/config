@@ -27,4 +27,4 @@ module.exports = {
 
 ---
 
-For more detailed information on configuring Prettier, see the [Eslint website](https://eslint.org).
+For more detailed information on configuring Prettier, see the [ESLint website](https://eslint.org).

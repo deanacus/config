@@ -1,5 +1,6 @@
-const reactRules = {
-  'react/boolean-prop-naming': 0,
+import type { Linter } from 'eslint';
+
+const reactRules: Linter.RulesRecord = {
   'react/button-has-type': [
     'error',
     {
@@ -15,10 +16,6 @@ const reactRules = {
     },
   ],
   'react/destructuring-assignment': ['error', 'always'],
-  'react/display-name': 0,
-  'react/forbid-component-props': 0,
-  'react/forbid-dom-props': 0,
-  'react/forbid-elements': 0,
   'react/forbid-foreign-prop-types': [
     'warn',
     {
@@ -41,7 +38,6 @@ const reactRules = {
     },
   ],
   'react/no-access-state-in-setstate': 2,
-  'react/no-adjacent-inline-elements': 0,
   'react/no-array-index-key': 2,
   'react/no-children-prop': 2,
   'react/no-danger': 2,
@@ -55,7 +51,6 @@ const reactRules = {
   'react/no-multi-comp': 2,
   'react/no-redundant-should-component-update': 2,
   'react/no-render-return-value': 2,
-  'react/no-set-state': 0,
   'react/no-string-refs': 2,
   'react/no-this-in-sfc': 2,
   'react/no-typos': 2,
@@ -72,7 +67,6 @@ const reactRules = {
   'react/no-unused-state': 2,
   'react/no-will-update-set-state': 2,
   'react/prefer-es6-class': ['error', 'always'],
-  'react/prefer-read-only-props': 0,
   'react/prefer-stateless-function': 2,
   'react/prop-types': [
     'error',
@@ -83,8 +77,6 @@ const reactRules = {
     },
   ],
   'react/react-in-jsx-scope': 2,
-  'react/require-default-props': 0,
-  'react/require-optimization': 0,
   'react/require-render-return': 2,
   'react/self-closing-comp': 2,
   'react/sort-comp': [
@@ -122,11 +114,10 @@ const reactRules = {
       },
     },
   ],
-  'react/sort-prop-types': 0,
   'react/state-in-constructor': ['error', 'always'],
   'react/static-property-placement': ['error', 'property assignment'],
   'react/style-prop-object': 2,
   'react/void-dom-elements-no-children': 2,
 };
 
-module.exports = reactRules;
+export default reactRules;

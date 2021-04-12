@@ -2,7 +2,7 @@
   "name": "@deanacus/tsconfig",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "My personal preferred typescript configuration",
+  "description": "Typescript configuration",
   "repository": {
     "type": "git",
     "url": "git@github.com:deanacus/config.git"

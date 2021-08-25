@@ -1,7 +1,7 @@
 import { resolve } from 'path';
-import readPkg from 'read-pkg-up';
+import { readPackageUpSync } from 'read-pkg-up';
 
-const pkg = readPkg.sync({ cwd: resolve(process.cwd()) });
+const pkg = readPackageUpSync({ cwd: resolve(process.cwd()) });
 
 const allDependencies = [
   ...Object.keys(pkg?.packageJson.dependencies ?? {}),

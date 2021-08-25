@@ -14,9 +14,6 @@
   "main": "tsconfig.json",
   "scripts": {},
   "devDependencies": {},
-  "peerDependencies": {
-    "typescript": ">=4.1.5"
-  },
   "publishConfig": {
     "access": "public"
   }

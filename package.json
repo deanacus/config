@@ -1,6 +1,6 @@
 {
   "author": "Dean Harris",
-  "description": "The Upstart component library",
+  "description": "My shared devtool configuration files",
   "version": "0.0.1",
   "license": "MIT",
   "name": "@deanacus/config",
@@ -9,20 +9,17 @@
     "bootstrap": "lerna bootstrap",
     "add-package": "lerna add",
     "build": "lerna run build",
-    "bump": "lerna version",
     "coverage": "lerna run coverage",
     "changed": "lerna changed",
     "clean": "lerna clean",
-    "diff": "lerna diff",
-    "exec": "lerna exec",
     "format": "lerna run format",
     "links": "lerna link",
     "lint": "lerna run lint",
-    "new": "lerna create",
-    "release": "lerna publish",
     "script": "lerna run",
     "start": "lerna run start",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "typecheck": "lerna run typecheck",
+    "postinstall": "lerna bootstrap"
   },
   "workspaces": [
     "packages/*"

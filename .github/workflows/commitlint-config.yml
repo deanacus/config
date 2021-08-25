@@ -10,33 +10,27 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: packages/commitlint
-
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 15.x]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '14'
 
       - name: Install Dependencies
-        run: npm ci
+        run: yarn
 
       - name: Lint Files
-        run: npm run lint
+        run: yarn lint
 
       - name: Validate Types
-        run: npm run type
+        run: yarn type
 
       - name: Run Tests
-        run: npm run coverage
+        run: yarn coverage
 
       - name: Build Package
-        run: npm run build
+        run: yarn build

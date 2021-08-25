@@ -11,12 +11,26 @@
   "bugs": {
     "url": "https://github.com/deanacus/config/issues"
   },
-  "main": "index.js",
-  "scripts": {},
-  "devDependencies": {
-    "prettier": "^2.2.1"
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "coverage": "jest --coverage",
+    "lint": "eslint 'src/**'",
+    "test": "jest"
   },
-  "peerDependencies": {
+  "devDependencies": {
+    "@deanacus/tsconfig": "^0.1.0",
+    "@deanacus/eslint-config": "^0.1.0",
+    "@types/jest": "^27.0.1",
+    "esbuild": "^0.12.22",
+    "esbuild-jest": "^0.5.0",
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "jsonschema": "^1.4.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
     "prettier": ">=2.2.1"
   },
   "publishConfig": {

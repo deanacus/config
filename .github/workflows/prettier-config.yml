@@ -1,11 +1,11 @@
-name: Eslint Config
+name: Prettier Config
 
 on:
   pull_request:
     branches:
       - main
     paths:
-      - 'packages/eslint/**'
+      - 'packages/prettier/**'
 
 jobs:
   build:
@@ -14,13 +14,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '14'
 
       - name: Install Dependencies
-        run: yarn
+        run: yarn install
 
       - name: Lint Files
         run: yarn lint

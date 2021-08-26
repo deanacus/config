@@ -5,12 +5,9 @@ const importRules: Linter.RulesRecord = {
   'import/export': 2,
   'import/extensions': [
     'error',
+    'never',
     {
-      ignorePackages: true,
-      js: 'never',
-      jsx: 'never',
-      ts: 'never',
-      tsx: 'never',
+      json: 'always'
     },
   ],
   'import/first': 2,

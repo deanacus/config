@@ -1,10 +1,10 @@
 import type { Options } from 'prettier';
 
 const config: Options = {
-  printWidth: 100,
+  printWidth: 80,
   proseWrap: 'always',
   singleQuote: true,
   trailingComma: 'all',
 };
 
-export default config;
+export = config;

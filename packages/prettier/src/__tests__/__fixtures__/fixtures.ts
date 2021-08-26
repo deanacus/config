@@ -1,5 +1,4 @@
-const commaArrayInput =
-  `const testArray = [
+const commaArrayInput = `const testArray = [
   'JavaScript (including experimental features)',
   'JSX',
   'Angular',
@@ -14,8 +13,7 @@ const commaArrayInput =
   'YAML'
 ];`;
 
-const commaArrayExpected =
-  `const testArray = [
+const commaArrayExpected = `const testArray = [
   'JavaScript (including experimental features)',
   'JSX',
   'Angular',
@@ -31,16 +29,14 @@ const commaArrayExpected =
 ];
 `;
 
-const commaObjectInput =
-  `const testObject = {
+const commaObjectInput = `const testObject = {
   printWidth: 100,
   proseWrap: 'always',
   singleQuote: true,
   trailingComma: 'all'
 };`;
 
-const commaObjectExpected =
-  `const testObject = {
+const commaObjectExpected = `const testObject = {
   printWidth: 100,
   proseWrap: 'always',
   singleQuote: true,
@@ -48,15 +44,13 @@ const commaObjectExpected =
 };
 `;
 
-const commaFnInput =
-  `const testFn = (
+const commaFnInput = `const testFn = (
   reallyLongArgName = true,
   anotherReallyLongArgName = true,
   oneMoreReallyLongArgName = true
 ) => {};`;
 
-const commaFnExpected =
-  `const testFn = (
+const commaFnExpected = `const testFn = (
   reallyLongArgName = true,
   anotherReallyLongArgName = true,
   oneMoreReallyLongArgName = true,
@@ -71,25 +65,21 @@ const printWidthFixExpected = `const result = thisStupidlyLongVariableName
   : anotherStupidlyLongVariableName;
 `;
 
-const printWidthLeaveInput =
-  `const result = thisVariableName ? thatVariableName : anotherVariableName;
+const printWidthLeaveInput = `const result = thisVariableName ? thatVariableName : anotherVariableName;
 `;
 
-const printWidthLeaveExpected =
-  `const result = thisVariableName ? thatVariableName : anotherVariableName;
+const printWidthLeaveExpected = `const result = thisVariableName ? thatVariableName : anotherVariableName;
 `;
 
 const proseWrapFixInput =
   'Prettier is an opinionated code formatter with support for JavaScript (including experimental features), JSX, Angular, Vue, Flow, TypeScript, CSS, Less, and SCSS, HTML, JSON, GraphQL, Markdown (including GFM and MDX), YAML';
 
-const proseWrapFixExpected =
-  `Prettier is an opinionated code formatter with support for JavaScript (including experimental
+const proseWrapFixExpected = `Prettier is an opinionated code formatter with support for JavaScript (including experimental
 features), JSX, Angular, Vue, Flow, TypeScript, CSS, Less, and SCSS, HTML, JSON, GraphQL, Markdown
 (including GFM and MDX), YAML
 `;
 
-const proseWrapLeaveInput =
-  `Prettier is an opinionated code formatter with support for:
+const proseWrapLeaveInput = `Prettier is an opinionated code formatter with support for:
 
 - JavaScript (including experimental features)
 - JSX
@@ -105,8 +95,7 @@ const proseWrapLeaveInput =
 - YAML
 `;
 
-const proseWrapLeaveExpected =
-  `Prettier is an opinionated code formatter with support for:
+const proseWrapLeaveExpected = `Prettier is an opinionated code formatter with support for:
 
 - JavaScript (including experimental features)
 - JSX

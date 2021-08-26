@@ -22,8 +22,7 @@
     "release": "lerna publish",
     "script": "lerna run",
     "start": "lerna run start",
-    "test": "lerna run test",
-    "postinstall": "lerna bootstrap"
+    "test": "lerna run test"
   },
   "workspaces": [
     "packages/*"

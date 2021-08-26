@@ -1,4 +1,4 @@
 module.exports = {
   extends: ['@deanacus'],
-  ignorePatterns: ['*.json'],
-}
+  ignorePatterns: ['*.json', 'dist/*'],
+};

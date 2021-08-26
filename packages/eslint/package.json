@@ -27,7 +27,7 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --noEmit && node ./scripts/build",
     "coverage": "jest --coverage",
     "lint": "eslint 'src/**'",
     "type": "tsc --noEmit"

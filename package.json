@@ -17,9 +17,9 @@
     "lint": "lerna run lint",
     "script": "lerna run",
     "start": "lerna run start",
+    "style": "lerna run style",
     "test": "lerna run test",
-    "typecheck": "lerna run typecheck",
-    "postinstall": "lerna bootstrap"
+    "type": "lerna run type"
   },
   "workspaces": [
     "packages/*"

@@ -16,11 +16,12 @@
     "build": "tsc --noEmit && node ./scripts/build.js",
     "coverage": "jest --coverage",
     "fix": "eslint './src/**' --fix && prettier --write --ignore-unknown ./",
-    "format": "prettier --write --ignore-unknown ./",
+    "format": "prettier --write --ignore-path ../../.prettierignore --ignore-unknown ./",
     "lint": "eslint",
+    "style": "prettier --check --ignore-path ../../.prettierignore --ignore-unknown ./",
     "test": "jest",
     "type": "tsc --noEmit",
-    "validate": "tsc --noEmit && eslint './src/**' && prettier --check --ignore-unknown ./"
+    "validate": "tsc --noEmit && eslint './src/**' && prettier --check --ignore-path ../../.prettierignore --ignore-unknown ./"
   },
   "dependencies": {
     "@commitlint/lint": "^13.1.0",

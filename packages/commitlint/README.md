@@ -31,7 +31,7 @@ so:
 
 ```js
 module.exports = {
-  extends: ['@deanacis/commitlint-config'],
+  extends: ['@deanacus/commitlint-config'],
   // ...overrides, etc
 };
 ```

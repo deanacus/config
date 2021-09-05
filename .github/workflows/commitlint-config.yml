@@ -1,4 +1,4 @@
-name: Commitlint Config Pull Request
+name: Commitlint Config
 
 on:
   pull_request:
@@ -16,21 +16,21 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
 
       - name: Install Dependencies
-        run: yarn
-
-      - name: Lint Files
-        run: yarn lint
+        run: yarn install
 
       - name: Validate Types
         run: yarn type
 
-      - name: Run Tests
-        run: yarn coverage
+      - name: Validate Code Style
+        run: yarn style
+
+      - name: Lint Files
+        run: yarn lint
 
       - name: Build Package
         run: yarn build

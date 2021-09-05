@@ -1,16 +1,21 @@
-import type { RuleSet } from '..';
+import type { RulesConfig } from '@commitlint/types';
 
-/**
- * The Commitlint rules that define the standards for
- * commit scopes - that is the pathenthised word that
- * immediately follows the commit type.
- */
+type ScopeRules = Pick<
+  RulesConfig,
+  | 'scope-case'
+  | 'scope-empty'
+  | 'scope-enum'
+  | 'scope-min-length'
+  | 'scope-max-length'
+>;
 
-export const scope: RuleSet = {
+export const scope: ScopeRules = {
   // Commit scope is in lower case
   'scope-case': [2, 'always', 'lowerCase'],
   // Commit scope is empty
   'scope-empty': [0, 'never'],
+  // Allowed scopes
+  'scope-enum': [0],
   // Commit scope has 0 or more characters
   'scope-min-length': [2, 'always', 0],
   // Commit scope has 10 or less characters

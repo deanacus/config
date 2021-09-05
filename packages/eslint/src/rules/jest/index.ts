@@ -1,9 +1,9 @@
 import type { Linter } from 'eslint';
 
 const jestRules: Linter.RulesRecord = {
-  'jest/consistent-test-it': ['error', { fn: 'it', withinDescribe: 'it' }],
-  'jest/expect-expect': ['error', { assertFunctionNames: ['expect'] }],
-  'jest/lowercase-name': ['error', { ignore: ['describe'] }],
+  'jest/consistent-test-it': [2, { fn: 'it', withinDescribe: 'it' }],
+  'jest/expect-expect': [2, { assertFunctionNames: ['expect'] }],
+  'jest/lowercase-name': [2, { ignore: ['describe'] }],
   'jest/no-alias-methods': 2,
   'jest/no-commented-out-tests': 2,
   'jest/no-conditional-expect': 2,
@@ -20,7 +20,6 @@ const jestRules: Linter.RulesRecord = {
   'jest/no-standalone-expect': 2,
   'jest/no-test-return-statement': 2,
   'jest/prefer-hooks-on-top': 2,
-  'jest/prefer-spy-on': 2,
   'jest/prefer-strict-equal': 2,
   'jest/prefer-to-be-null': 2,
   'jest/prefer-to-be-undefined': 2,
@@ -30,7 +29,7 @@ const jestRules: Linter.RulesRecord = {
   'jest/require-top-level-describe': 2,
   'jest/valid-describe': 2,
   'jest/valid-title': [
-    'error',
+    2,
     {
       ignoreTypeOfDescribeName: false,
       disallowedWords: [],

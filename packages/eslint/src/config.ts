@@ -19,7 +19,7 @@ const getRules = () => ({
 });
 
 const getEnv = () => ({
-  ...(hasJest ? { jest: true } : {}),
+  jest: true,
   browser: true,
   node: true,
 });

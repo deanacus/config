@@ -3,7 +3,7 @@ import type { Linter } from 'eslint';
 const jsxa11y: Linter.RulesRecord = {
   'jsx-a11y/accessible-emoji': 2,
   'jsx-a11y/alt-text': [
-    'error',
+    2,
     {
       elements: ['img', 'object', 'area', 'input[type="image"]'],
       img: [],
@@ -14,7 +14,7 @@ const jsxa11y: Linter.RulesRecord = {
   ],
   'jsx-a11y/anchor-has-content': 2,
   'jsx-a11y/anchor-is-valid': [
-    'error',
+    2,
     {
       components: ['Link'],
       specialLink: ['to'],
@@ -25,7 +25,7 @@ const jsxa11y: Linter.RulesRecord = {
   'jsx-a11y/aria-props': 2,
   'jsx-a11y/aria-proptypes': 2,
   'jsx-a11y/aria-role': [
-    'error',
+    2,
     {
       ignoreNonDom: false,
       ignoreNonDOM: false,
@@ -33,12 +33,12 @@ const jsxa11y: Linter.RulesRecord = {
   ],
   'jsx-a11y/aria-unsupported-elements': 2,
   'jsx-a11y/autocomplete-valid': [
-    'error',
+    2,
     { inputComponents: ['Input', 'FormField'] },
   ],
   'jsx-a11y/click-events-have-key-events': 2,
   'jsx-a11y/control-has-associated-label': [
-    'error',
+    2,
     {
       labelAttributes: ['label'],
       controlComponents: [],
@@ -72,7 +72,7 @@ const jsxa11y: Linter.RulesRecord = {
   'jsx-a11y/img-redundant-alt': 2,
   'jsx-a11y/interactive-supports-focus': 2,
   'jsx-a11y/label-has-associated-control': [
-    'error',
+    2,
     {
       labelComponents: [],
       labelAttributes: [],
@@ -83,7 +83,7 @@ const jsxa11y: Linter.RulesRecord = {
   ],
   'jsx-a11y/lang': 2,
   'jsx-a11y/media-has-caption': [
-    'error',
+    2,
     {
       audio: [],
       video: [],
@@ -93,25 +93,25 @@ const jsxa11y: Linter.RulesRecord = {
   'jsx-a11y/mouse-events-have-key-events': 2,
   'jsx-a11y/no-access-key': 2,
   'jsx-a11y/no-autofocus': [
-    'error',
+    2,
     {
       ignoreNonDOM: true,
     },
   ],
   'jsx-a11y/no-distracting-elements': [
-    'error',
+    2,
     {
       elements: ['marquee', 'blink'],
     },
   ],
   'jsx-a11y/no-interactive-element-to-noninteractive-role': [
-    'error',
+    2,
     {
       tr: ['none', 'presentation'],
     },
   ],
   'jsx-a11y/no-noninteractive-element-interactions': [
-    'error',
+    2,
     {
       handlers: [
         'onClick',
@@ -124,7 +124,7 @@ const jsxa11y: Linter.RulesRecord = {
     },
   ],
   'jsx-a11y/no-noninteractive-element-to-interactive-role': [
-    'error',
+    2,
     {
       ul: ['listbox', 'menu', 'menubar', 'tablist', 'tree', 'treegrid'],
       ol: ['listbox', 'menu', 'menubar', 'tablist', 'tree', 'treegrid'],
@@ -134,7 +134,7 @@ const jsxa11y: Linter.RulesRecord = {
     },
   ],
   'jsx-a11y/no-noninteractive-tabindex': [
-    'error',
+    2,
     {
       tags: [],
       roles: ['tabpanel'],
@@ -143,7 +143,7 @@ const jsxa11y: Linter.RulesRecord = {
   'jsx-a11y/no-onchange': ['off'],
   'jsx-a11y/no-redundant-roles': 2,
   'jsx-a11y/no-static-element-interactions': [
-    'error',
+    2,
     {
       handlers: [
         'onClick',

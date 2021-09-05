@@ -10,7 +10,7 @@ on:
 
 jobs:
   setup:
-    name: Setup
+    name: Build, Test and Validate
     runs-on: ubuntu-latest
 
     steps:
@@ -20,47 +20,23 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
           cache: 'yarn'
 
       - name: Install Dependencies
-        run: yarn bootstrap
+        run: yarn && yarn bootstrap
 
       - name: Build Package
         run: yarn build
 
-  test:
-    name: Run Tests
-    runs-on: ubuntu-latest
-    needs: setup
-
-    steps:
-      - name: Test
+      - name: Run Tests
         run: yarn test --scope @deanacus/eslint-config
 
-  types:
-    name: Validate Types
-    runs-on: ubuntu-latest
-    needs: setup
-
-    steps:
-      - name: Type Check
+      - name: Validate Types
         run: yarn type --scope @deanacus/eslint-config
 
-  style:
-    name: Validate Code Formatting
-    runs-on: ubuntu-latest
-    needs: setup
-
-    steps:
-      - name: Prettier
+      - name: Validate Code Formatting
         run: yarn style --scope @deanacus/eslint-config
 
-  lint:
-    name: Validate Code Standards
-    runs-on: ubuntu-latest
-    needs: setup
-
-    steps:
-      - name: Lint
+      - name: Validate Code Standards
         run: yarn lint --scope @deanacus/eslint-config

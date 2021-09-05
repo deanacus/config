@@ -74,9 +74,9 @@ const printWidthLeaveExpected = `const result = thisVariableName ? thatVariableN
 const proseWrapFixInput =
   'Prettier is an opinionated code formatter with support for JavaScript (including experimental features), JSX, Angular, Vue, Flow, TypeScript, CSS, Less, and SCSS, HTML, JSON, GraphQL, Markdown (including GFM and MDX), YAML';
 
-const proseWrapFixExpected = `Prettier is an opinionated code formatter with support for JavaScript (including experimental
-features), JSX, Angular, Vue, Flow, TypeScript, CSS, Less, and SCSS, HTML, JSON, GraphQL, Markdown
-(including GFM and MDX), YAML
+const proseWrapFixExpected = `Prettier is an opinionated code formatter with support for JavaScript (including
+experimental features), JSX, Angular, Vue, Flow, TypeScript, CSS, Less, and
+SCSS, HTML, JSON, GraphQL, Markdown (including GFM and MDX), YAML
 `;
 
 const proseWrapLeaveInput = `Prettier is an opinionated code formatter with support for:

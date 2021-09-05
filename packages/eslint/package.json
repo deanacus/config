@@ -30,10 +30,11 @@
     "build": "tsc --noEmit && node ./scripts/build",
     "coverage": "jest --coverage",
     "fix": "eslint './src/**' --fix && prettier --write --ignore-unknown ./",
-    "format": "prettier --write --ignore-unknown ./",
+    "format": "prettier --write --ignore-path ../../.prettierignore --ignore-unknown ./",
     "lint": "eslint 'src/**'",
+    "style": "prettier --check --ignore-path ../../.prettierignore --ignore-unknown ./",
     "type": "tsc --noEmit",
-    "validate": "tsc --noEmit && eslint './src/**' && prettier --check --ignore-unknown ./"
+    "validate": "tsc --noEmit && eslint './src/**' && prettier --check --ignore-path ../../.prettierignore --ignore-unknown ./"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.21.0",

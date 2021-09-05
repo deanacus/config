@@ -15,9 +15,11 @@
   "scripts": {
     "build": "tsc",
     "coverage": "jest --coverage",
-    "format": "prettier --check --ignore-unknown ./",
+    "format": "prettier --write --ignore-path ../../.prettierignore --ignore-unknown ./",
     "lint": "eslint 'src/**'",
-    "test": "jest"
+    "style": "prettier --check --ignore-path ../../.prettierignore --ignore-unknown ./",
+    "test": "jest",
+    "type": "tsc --noEmit"
   },
   "devDependencies": {
     "@deanacus/tsconfig": "^0.1.0",

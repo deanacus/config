@@ -16,7 +16,8 @@ npm install --save-dev @deanacus/eslint-config
 
 ## Extend/Override
 
-After installing, update your project's `.eslintrc.js` file to import the rule sets you want:
+After installing, update your project's `.eslintrc.js` file to import the rule
+sets you want:
 
 ```js
 module.exports = {
@@ -27,4 +28,5 @@ module.exports = {
 
 ---
 
-For more detailed information on configuring Prettier, see the [ESLint website](https://eslint.org).
+For more detailed information on configuring Prettier, see the
+[ESLint website](https://eslint.org).

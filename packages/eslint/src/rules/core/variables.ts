@@ -1,7 +1,7 @@
 import type { Linter } from 'eslint';
 
 const variables: Linter.RulesRecord = {
-  'init-declarations': ['error', 'always'],
+  'init-declarations': [2, 'always'],
   'no-delete-var': 2,
   'no-label-var': 2,
   'no-restricted-globals': 2,

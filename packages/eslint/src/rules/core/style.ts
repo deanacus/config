@@ -1,25 +1,16 @@
 import type { Linter } from 'eslint';
 
 const style: Linter.RulesRecord = {
-  camelcase: ['error', { properties: 'always', ignoreImports: true }],
-  'capitalized-comments': [
-    'error',
-    'always',
-    {
-      ignoreConsecutiveComments: true,
-      ignoreInlineComments: true,
-      ignorePattern: 'pragma',
-    },
-  ],
+  camelcase: [2, { properties: 'always', ignoreImports: true }],
   'func-name-matching': 2,
-  'func-names': ['error', 'as-needed'],
-  'func-style': ['error', 'expression'],
-  'id-length': ['error', { min: 2 }],
-  'lines-around-comment': ['error', { beforeBlockComment: true }],
-  'lines-between-class-members': ['error', 'always'],
-  'max-depth': ['error', { max: 4 }],
+  'func-names': [2, 'as-needed'],
+  'func-style': [2, 'expression'],
+  'id-length': [2, { min: 2 }],
+  'lines-around-comment': [2, { beforeBlockComment: true }],
+  'lines-between-class-members': [2, 'always'],
+  'max-depth': [2, { max: 4 }],
   'max-len': [
-    'error',
+    2,
     {
       code: 100,
       tabWidth: 2,
@@ -30,9 +21,9 @@ const style: Linter.RulesRecord = {
       ignoreRegExpLiterals: true,
     },
   ],
-  'max-nested-callbacks': ['error', { max: 5 }],
-  'max-params': ['error', { max: 5 }],
-  'max-statements-per-line': ['error', { max: 1 }],
+  'max-nested-callbacks': [2, { max: 5 }],
+  'max-params': [2, { max: 5 }],
+  'max-statements-per-line': [2, { max: 1 }],
   'new-cap': 2,
   'no-array-constructor': 2,
   'no-bitwise': 2,
@@ -41,7 +32,7 @@ const style: Linter.RulesRecord = {
   'no-multi-assign': 2,
   'no-nested-ternary': 2,
   'no-restricted-syntax': [
-    'error',
+    2,
     {
       selector: 'ForInStatement',
       message:
@@ -64,19 +55,15 @@ const style: Linter.RulesRecord = {
   'no-tabs': 2,
   'no-underscore-dangle': 2,
   'no-unneeded-ternary': 2,
-  'one-var': ['error', 'never'],
-  'operator-assignment': ['error', 'always'],
+  'one-var': [2, 'never'],
+  'operator-assignment': [2, 'always'],
   'padding-line-between-statements': [
-    'error',
+    2,
     { blankLine: 'always', prev: '*', next: 'return' },
   ],
   'prefer-object-spread': 2,
-  quotes: [
-    'error',
-    'single',
-    { avoidEscape: true, allowTemplateLiterals: true },
-  ],
-  'spaced-comment': ['error', 'always', { exceptions: ['*', '-', '=', '+'] }],
+  quotes: [2, 'single', { avoidEscape: true, allowTemplateLiterals: true }],
+  'spaced-comment': [2, 'always', { exceptions: ['*', '-', '=', '+'] }],
 };
 
 export default style;

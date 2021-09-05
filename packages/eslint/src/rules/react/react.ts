@@ -2,7 +2,7 @@ import type { Linter } from 'eslint';
 
 const reactRules: Linter.RulesRecord = {
   'react/button-has-type': [
-    'error',
+    2,
     {
       button: true,
       submit: true,
@@ -10,12 +10,12 @@ const reactRules: Linter.RulesRecord = {
     },
   ],
   'react/default-props-match-prop-types': [
-    'error',
+    2,
     {
       allowRequiredDefaults: false,
     },
   ],
-  'react/destructuring-assignment': ['error', 'always'],
+  'react/destructuring-assignment': [2, 'always'],
   'react/forbid-foreign-prop-types': [
     'warn',
     {
@@ -23,7 +23,7 @@ const reactRules: Linter.RulesRecord = {
     },
   ],
   'react/forbid-prop-types': [
-    'error',
+    2,
     {
       forbid: ['any', 'array', 'object'],
       checkContextTypes: false,
@@ -31,7 +31,7 @@ const reactRules: Linter.RulesRecord = {
     },
   ],
   'react/function-component-definition': [
-    'error',
+    2,
     {
       namedComponents: 'arrow-function',
       unnamedComponents: 'arrow-function',
@@ -58,7 +58,7 @@ const reactRules: Linter.RulesRecord = {
   'react/no-unknown-property': 2,
   'react/no-unsafe': 2,
   'react/no-unused-prop-types': [
-    'error',
+    2,
     {
       customValidators: [],
       skipShapeProps: true,
@@ -66,10 +66,10 @@ const reactRules: Linter.RulesRecord = {
   ],
   'react/no-unused-state': 2,
   'react/no-will-update-set-state': 2,
-  'react/prefer-es6-class': ['error', 'always'],
+  'react/prefer-es6-class': [2, 'always'],
   'react/prefer-stateless-function': 2,
   'react/prop-types': [
-    'error',
+    2,
     {
       ignore: [],
       customValidators: [],
@@ -80,7 +80,7 @@ const reactRules: Linter.RulesRecord = {
   'react/require-render-return': 2,
   'react/self-closing-comp': 2,
   'react/sort-comp': [
-    'error',
+    2,
     {
       order: ['static-methods', 'lifecycle', 'everything-else', 'render'],
       groups: {
@@ -114,8 +114,8 @@ const reactRules: Linter.RulesRecord = {
       },
     },
   ],
-  'react/state-in-constructor': ['error', 'always'],
-  'react/static-property-placement': ['error', 'property assignment'],
+  'react/state-in-constructor': [2, 'always'],
+  'react/static-property-placement': [2, 'property assignment'],
   'react/style-prop-object': 2,
   'react/void-dom-elements-no-children': 2,
 };

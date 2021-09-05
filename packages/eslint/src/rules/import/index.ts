@@ -4,10 +4,10 @@ const importRules: Linter.RulesRecord = {
   'import/default': 2,
   'import/export': 2,
   'import/extensions': [
-    'error',
+    2,
     'never',
     {
-      json: 'always'
+      json: 'always',
     },
   ],
   'import/first': 2,
@@ -27,7 +27,7 @@ const importRules: Linter.RulesRecord = {
     },
   ],
   'import/no-cycle': [
-    'error',
+    2,
     {
       maxDepth: 1,
     },
@@ -35,7 +35,7 @@ const importRules: Linter.RulesRecord = {
   'import/no-duplicates': 2,
   'import/no-dynamic-require': 2,
   'import/no-extraneous-dependencies': [
-    'error',
+    2,
     {
       devDependencies: true,
       optionalDependencies: true,
@@ -48,7 +48,7 @@ const importRules: Linter.RulesRecord = {
   'import/no-named-default': 2,
   'import/no-self-import': 2,
   'import/no-unresolved': [
-    'error',
+    2,
     {
       commonjs: true,
       caseSensitive: true,
@@ -63,19 +63,19 @@ const importRules: Linter.RulesRecord = {
     },
   ],
   'import/no-useless-path-segments': [
-    'error',
+    2,
     {
       commonjs: true,
     },
   ],
   'import/no-webpack-loader-syntax': 2,
   'import/order': [
-    'error',
+    2,
     {
       groups: [['builtin', 'external', 'internal']],
     },
   ],
-  'import/prefer-default-export': 2,
+  'import/prefer-default-export': 0,
 };
 
 export default importRules;

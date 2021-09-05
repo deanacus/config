@@ -8,7 +8,7 @@ const errors: Linter.RulesRecord = {
   'no-compare-neg-zero': 2,
   'no-cond-assign': 2,
   'no-console': 1,
-  'no-constant-condition': ['error', { checkLoops: false }],
+  'no-constant-condition': [2, { checkLoops: false }],
   'no-control-regex': 2,
   'no-debugger': 1,
   'no-dupe-args': 2,

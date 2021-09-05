@@ -1,9 +1,9 @@
 import type { Linter } from 'eslint';
 
 const modern: Linter.RulesRecord = {
-  'arrow-body-style': ['error', 'as-needed'],
-  'arrow-parens': ['error', 'always'],
-  'arrow-spacing': ['error', { before: true, after: true }],
+  'arrow-body-style': [2, 'as-needed'],
+  'arrow-parens': [2, 'always'],
+  'arrow-spacing': [2, { before: true, after: true }],
   'constructor-super': 2,
   'no-class-assign': 2,
   'no-confusing-arrow': 2,
@@ -16,7 +16,7 @@ const modern: Linter.RulesRecord = {
   'no-useless-constructor': 2,
   'no-useless-rename': 2,
   'no-var': 2,
-  'object-shorthand': ['error', 'always', { avoidQuotes: true }],
+  'object-shorthand': [2, 'always', { avoidQuotes: true }],
   'prefer-arrow-callback': 2,
   'prefer-const': 2,
   'prefer-destructuring': 2,

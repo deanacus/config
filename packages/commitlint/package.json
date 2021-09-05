@@ -2,33 +2,39 @@
   "name": "@deanacus/commitlint-config",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "My personal preferred commit lint configuration rules",
+  "description": "A CommitLint configuration",
   "repository": {
     "type": "git",
     "url": "git@github.com:deanacus/config.git"
   },
-  "homepage": "https://github.com/deanacus/config/packages/commitlint",
+  "homepage": "https://github.com/deanacus/config/tree/main/packages/commitlint",
   "bugs": {
     "url": "https://github.com/deanacus/config/issues"
   },
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --noEmit && node ./scripts/build.js",
     "coverage": "jest --coverage",
+    "fix": "eslint './src/**' --fix && prettier --write --ignore-unknown ./",
+    "format": "prettier --write --ignore-unknown ./",
     "lint": "eslint",
     "test": "jest",
-    "type": "tsc --noEmit"
+    "type": "tsc --noEmit",
+    "validate": "tsc --noEmit && eslint './src/**' && prettier --check --ignore-unknown ./"
   },
   "dependencies": {
     "@commitlint/lint": "^13.1.0",
     "@commitlint/utils": "^9.0.1"
   },
   "devDependencies": {
+    "@commitlint/types": "13.1.0",
+    "@deanacus/eslint-config": "^0.1.0",
     "@deanacus/tsconfig": "^0.1.0",
     "esbuild": "^0.12.22",
     "esbuild-jest": "^0.5.0",
-    "eslint": "^7.23.0",
+    "eslint": "^7.32.0",
     "jest": "^27.0.6",
+    "prettier": "^2.3.2",
     "typescript": "^4.2.3"
   },
   "publishConfig": {

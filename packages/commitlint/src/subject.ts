@@ -1,11 +1,15 @@
-import type { RuleSet } from '..';
-/**
- * The Commitlint rules that defined the standards for
- * commit subject text - the text that makes up the remainder
- * of the first line of the commit after the type and scope
- */
+import type { RulesConfig } from '@commitlint/types';
 
-export const subject: RuleSet = {
+type SubjectRules = Pick<
+  RulesConfig,
+  | 'subject-case'
+  | 'subject-empty'
+  | 'subject-full-stop'
+  | 'subject-max-length'
+  | 'subject-min-length'
+>;
+
+export const subject: SubjectRules = {
   // Commit subject is in lower case
   'subject-case': [2, 'always', 'lower-case'],
   // Commit subject is not empty

@@ -1,14 +1,23 @@
-import type { RuleSet } from '..';
+import type { RulesConfig } from '@commitlint/types';
 
-/**
- * The Commitlint rules that define the standards for
- * commit footer text - the optional text that is placed on
- * lines subsequent to the commit body
- */
+type FooterRules = Pick<
+  RulesConfig,
+  | 'footer-empty'
+  | 'footer-leading-blank'
+  | 'footer-max-length'
+  | 'footer-max-line-length'
+  | 'footer-min-length'
+>;
 
-export const footer: RuleSet = {
+export const footer: FooterRules = {
+  // Commit footer can be empty
+  'footer-empty': [0],
   // Commit footer begins with blank line
   'footer-leading-blank': [2, 'always'],
+  // Commit footer max length
+  'footer-max-length': [2, 'always', 72],
   // Commit footer lines has `value` or less characters
   'footer-max-line-length': [2, 'always', 72],
+  // Commit footer min length
+  'footer-min-length': [0],
 };

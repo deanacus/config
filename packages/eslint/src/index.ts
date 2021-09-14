@@ -7,13 +7,13 @@ import {
   hasTypescript,
   getOverrides,
   getSettings,
-} from './utils'
+} from './utils';
 
 const parser = hasTypescript ? '@typescript-eslint/parser' : undefined;
-const plugins =  getPlugins();
-const env =  getEnv();
-const parserOptions =  getParserOpts();
-const rules =  getRules();
+const plugins = getPlugins();
+const env = getEnv();
+const parserOptions = getParserOpts();
+const rules = getRules();
 const overrides = getOverrides();
 const settings = getSettings();
 

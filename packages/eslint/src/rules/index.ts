@@ -8,7 +8,6 @@ import prettierRules from './prettier';
 export const core = {
   ...coreRules,
   ...importRules,
-  ...jestRules,
   ...prettierRules,
 };
 
@@ -19,3 +18,7 @@ export const react = {
 export const typescript = {
   ...typescriptRules,
 };
+
+export const jest = {
+  ...jestRules,
+}

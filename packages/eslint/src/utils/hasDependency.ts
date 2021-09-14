@@ -9,9 +9,9 @@ const allDependencies = [
   ...Object.keys(pkg?.packageJson.peerDependencies ?? {}),
 ];
 
-export const hasDependency = (dependency: string): boolean =>
+const hasDependency = (dependency: string): boolean =>
   allDependencies.includes(dependency);
 
 export const hasReact = hasDependency('react');
-export const hasTypescript = hasDependency('react');
-export const hasJest = hasDependency('react');
+export const hasTypescript = hasDependency('typescript');
+export const hasJest = hasDependency('jest');

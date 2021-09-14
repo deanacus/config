@@ -1,4 +1,6 @@
-const disabledEslintRules = {
+import { Linter } from 'eslint';
+
+const disabledEslintRules: Linter.RulesRecord = {
   'default-param-last': 0,
   'init-declarations': 0,
   'lines-between-class-members': 0,
@@ -19,10 +21,10 @@ const disabledEslintRules = {
   quotes: 0,
 };
 
-const typescriptRules = {
+const typescriptRules: Linter.RulesRecord = {
   ...disabledEslintRules,
   '@typescript-eslint/adjacent-overload-signatures': 2,
-  '@typescript-eslint/ban-ts-comment': 1,
+  '@typescript-eslint/ban-ts-comment': 2,
   '@typescript-eslint/ban-types': 2,
   '@typescript-eslint/default-param-last': 2,
   '@typescript-eslint/explicit-module-boundary-types': 2,

@@ -8,7 +8,7 @@ const variables: Linter.RulesRecord = {
   'no-shadow': 2,
   'no-shadow-restricted-names': 2,
   'no-undef': 2,
-  'no-undefined': 2,
+  'no-undefined': 0,
   'no-unused-vars': 2,
   'no-use-before-define': 2,
 };

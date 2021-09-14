@@ -40,4 +40,4 @@ const jestRules: Linter.RulesRecord = {
   ],
 };
 
-export default jestRules
+export default jestRules;

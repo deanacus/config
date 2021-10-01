@@ -28,7 +28,9 @@
     "@commitlint/utils": "^9.0.1"
   },
   "devDependencies": {
+    "@commitlint/lint": "^13.1.0",
     "@commitlint/types": "^13.1.0",
+    "@commitlint/utils": "^9.0.1",
     "@deanacus/eslint-config": "^0.1.0",
     "@deanacus/tsconfig": "^0.1.0",
     "esbuild": "^0.12.25",

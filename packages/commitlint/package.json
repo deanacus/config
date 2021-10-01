@@ -1,6 +1,6 @@
 {
   "name": "@deanacus/commitlint-config",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "license": "MIT",
   "description": "A CommitLint configuration",
   "repository": {
@@ -23,7 +23,7 @@
     "type": "tsc --noEmit",
     "validate": "tsc --noEmit && eslint './src/**' && prettier --check --ignore-path ../../.prettierignore --ignore-unknown ./"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@commitlint/lint": "^13.1.0",
     "@commitlint/utils": "^9.0.1"
   },

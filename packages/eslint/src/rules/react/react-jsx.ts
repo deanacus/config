@@ -23,6 +23,7 @@ const reactJSX: Linter.RulesRecord = {
   'react/jsx-no-target-blank': [2, { enforceDynamicLinks: 'always' }],
   'react/jsx-no-undef': 2,
   'react/jsx-pascal-case': [2, { allowAllCaps: true, ignore: [] }],
+  'react/jsx-props-no-spreading': 2,
   'react/jsx-sort-default-props': ['off', { ignoreCase: true }],
   'react/jsx-sort-prop-types': ['off'],
   'react/jsx-sort-props': [

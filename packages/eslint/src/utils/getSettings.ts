@@ -1,12 +1,11 @@
 import { Linter } from 'eslint';
+import { hasTypescript } from '.';
 
-export const getSettings = (
-  includeTypescript = false,
-): Linter.Config['settings'] => ({
+export const getSettings = (): Linter.Config['settings'] => ({
   'import/resolver': {
     node: {
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
-    ...(includeTypescript ? { typescript: {} } : null),
+    ...(hasTypescript ? { typescript: {} } : null),
   },
 });

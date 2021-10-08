@@ -1,6 +1,6 @@
 {
   "name": "@deanacus/eslint-config",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "description": "An Eslint configuration",
   "keywords": [
@@ -45,6 +45,7 @@
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
     "esbuild": "^0.12.25",
+    "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",

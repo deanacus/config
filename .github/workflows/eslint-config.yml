@@ -27,7 +27,7 @@ jobs:
         run: yarn && yarn bootstrap
 
       - name: Build Package
-        run: yarn build
+        run: yarn build --scope @deanacus/eslint-config
 
       - name: Run Tests
         run: yarn test --scope @deanacus/eslint-config

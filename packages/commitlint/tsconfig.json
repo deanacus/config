@@ -5,5 +5,5 @@
     "outDir": "./dist",
     "rootDir": "./src"
   },
-  "exclude": ["./scripts", "./dist", "index.d.ts", "./coverage", "./*.js"]
+  "exclude": ["scripts", "dist", "index.d.ts", "coverage", "./*.js"]
 }

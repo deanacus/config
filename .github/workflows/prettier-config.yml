@@ -1,9 +1,6 @@
 name: Prettier Config
 
 on:
-  push:
-    paths:
-      - 'packages/prettier/**'
   pull_request:
     paths:
       - 'packages/prettier/**'
@@ -27,7 +24,7 @@ jobs:
         run: yarn && yarn bootstrap
 
       - name: Build Package
-        run: yarn build
+        run: yarn build --scope @deanacus/prettier-config
 
       - name: Run Tests
         run: yarn test --scope @deanacus/prettier-config

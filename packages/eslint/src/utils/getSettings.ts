@@ -1,5 +1,5 @@
 import { Linter } from 'eslint';
-import { hasTypescript } from '.';
+import { hasReact, hasTypescript } from '.';
 
 export const getSettings = (): Linter.Config['settings'] => ({
   'import/resolver': {
@@ -7,5 +7,12 @@ export const getSettings = (): Linter.Config['settings'] => ({
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
     ...(hasTypescript ? { typescript: {} } : null),
+    ...(hasReact
+      ? {
+          react: {
+            version: 'detect',
+          },
+        }
+      : null),
   },
 });

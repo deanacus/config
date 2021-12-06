@@ -13,6 +13,7 @@
     "./dist",
     "index.d.ts",
     "./*.js",
-    "./coverage"
+    "./coverage",
+    "scripts"
   ]
 }

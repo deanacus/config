@@ -27,16 +27,16 @@ jobs:
         run: yarn
 
       - name: Build Package
-        run: yarn build --scope @deanacus/eslint-config
+        run: yarn build
 
       - name: Run Tests
-        run: yarn test --scope @deanacus/eslint-config
+        run: yarn test
 
       - name: Validate Types
-        run: yarn type --scope @deanacus/eslint-config
+        run: yarn type
 
       - name: Validate Code Formatting
-        run: yarn style --scope @deanacus/eslint-config
+        run: yarn style
 
       - name: Validate Code Standards
-        run: yarn lint --scope @deanacus/eslint-config
+        run: yarn lint

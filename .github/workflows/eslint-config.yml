@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-      working-directory: ./packages/eslint
+        working-directory: ./packages/eslint
 
     steps:
       - name: Checkout

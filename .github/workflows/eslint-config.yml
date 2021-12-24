@@ -27,7 +27,7 @@ jobs:
         run: yarn
 
       - name: Build Package
-        run: yarn build
+        run: echo $PWD && yarn build
 
       - name: Run Tests
         run: yarn test

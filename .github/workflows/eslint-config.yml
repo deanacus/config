@@ -27,10 +27,7 @@ jobs:
         run: yarn
 
       - name: Build Package
-        run: ls -1a && yarn build
-
-      - name: Run Tests
-        run: yarn test
+        run: yarn build
 
       - name: Validate Types
         run: yarn type

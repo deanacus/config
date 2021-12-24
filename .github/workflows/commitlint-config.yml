@@ -33,4 +33,4 @@ jobs:
         run: yarn style --scope @deanacus/commitlint-config
 
       - name: Validate Code Standards
-        run: yarn lint
+        run: yarn lint --scope @deanacus/commitlint-config

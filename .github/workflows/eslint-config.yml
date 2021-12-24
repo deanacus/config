@@ -1,9 +1,6 @@
 name: Eslint
 
 on:
-  push:
-    paths:
-      - 'packages/eslint/**'
   pull_request:
     paths:
       - 'packages/eslint/**'
@@ -12,6 +9,9 @@ jobs:
   setup:
     name: Build, Test and Validate
     runs-on: ubuntu-latest
+    defaults:
+      run:
+      working-directory: ./packages/eslint
 
     steps:
       - name: Checkout
@@ -24,7 +24,7 @@ jobs:
           cache: 'yarn'
 
       - name: Install Dependencies
-        run: yarn && yarn bootstrap
+        run: yarn
 
       - name: Build Package
         run: yarn build --scope @deanacus/eslint-config

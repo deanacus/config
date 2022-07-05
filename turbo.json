@@ -8,6 +8,9 @@
     "test": {
       "outputMode": "new-only"
     },
+    "coverage": {
+      "outputMode": "new-only"
+    },
     "validate": {
       "outputMode": "new-only"
     }

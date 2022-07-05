@@ -2,21 +2,7 @@
   "name": "@deanacus/eslint-config",
   "version": "0.2.2",
   "license": "MIT",
-  "description": "An Eslint configuration",
-  "keywords": [
-    "eslint",
-    "eslint-config",
-    "eslint-plugin-import",
-    "eslint-plugin-jest",
-    "eslint-plugin-jsx-a11y",
-    "eslint-plugin-react",
-    "eslint-plugin-react-hooks",
-    "eslint-typescript",
-    "jest",
-    "react",
-    "react-hooks",
-    "typescript"
-  ],
+  "description": "Eslint configuration",
   "repository": {
     "type": "git",
     "url": "git@github.com:deanacus/config.git"
@@ -26,48 +12,34 @@
     "url": "https://github.com/deanacus/config/issues"
   },
   "main": "dist/index.js",
-  "files": [
-    "./dist/index.js",
-    "package.json",
-    "README.md"
-  ],
   "scripts": {
     "build": "tsc --noEmit && node ./scripts/build",
-    "coverage": "jest --coverage",
-    "fix": "eslint './src/**' --fix && prettier --write --ignore-unknown ./",
-    "format": "prettier --write --ignore-path ../../.prettierignore --ignore-unknown ./",
-    "lint": "eslint",
-    "style": "prettier --check --ignore-path ../../.prettierignore --ignore-unknown ./",
-    "type": "tsc --noEmit",
-    "validate": "tsc --noEmit && eslint './src/**' && prettier --check --ignore-path ../../.prettierignore --ignore-unknown ./"
+    "validate": "tsc --noEmit && eslint && prettier --check --ignore-path --ignore-unknown ./src"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
-    "esbuild": "^0.14.6",
-    "eslint-import-resolver-typescript": "^2.5.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jest": "^25.3.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint-import-resolver-typescript": "^3.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "read-pkg-up": "^8.0.0"
   },
   "devDependencies": {
-    "@deanacus/prettier-config": "^0.1.1",
-    "@deanacus/tsconfig": "^0.1.0",
-    "@types/eslint": "^8.2.1",
-    "@types/node": "^16.7.10",
-    "eslint": "^8.4.0",
-    "jest": "^27.1.0",
-    "prettier": "^2.3.2",
-    "typescript": "^4.5.2"
+    "@deanacus/tsconfig": "*",
+    "@types/eslint": "^8.4.5",
+    "@types/node": "^18.0.1",
+    "esbuild": "^0.14.48",
+    "eslint": "^8.19.0",
+    "jest": "^28.1.2",
+    "typescript": "^4.7.4"
   },
   "peerDependencies": {
-    "eslint": "^8.4.0"
+    "eslint": ">=8"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "prettier": "@deanacus/prettier-config"
+  }
 }

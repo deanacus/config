@@ -1,9 +1,7 @@
 {
   "extends": "@deanacus/tsconfig",
   "compilerOptions": {
-    "module": "commonjs",
-    "outDir": "./dist",
-    "rootDir": "./src"
+    "module": "commonjs"
   },
-  "exclude": ["**/test/**", "./dist", "index.d.ts", "./coverage", "./scripts"]
+  "exclude": ["**/__tests__/*", "./dist", "./coverage", "./scripts"]
 }

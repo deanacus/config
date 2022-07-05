@@ -1,30 +1,27 @@
 {
-  "author": "Dean Harris",
-  "description": "My shared devtool configuration files",
-  "version": "0.0.1",
-  "license": "MIT",
-  "name": "@deanacus/config",
+  "name": "config",
+  "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "add-package": "lerna add",
-    "build": "lerna run build",
-    "coverage": "lerna run coverage",
-    "changed": "lerna changed",
-    "clean": "lerna clean",
-    "format": "lerna run format",
-    "links": "lerna link",
-    "lint": "lerna run lint",
-    "script": "lerna run",
-    "start": "lerna run start",
-    "style": "lerna run style",
-    "test": "lerna run test",
-    "type": "lerna run type"
-  },
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test --parallel",
+    "validate": "turbo run validate --parallel --no-cache"
+  },
   "devDependencies": {
-    "lerna": "^4.0.0"
-  }
+    "@deanacus/eslint-config": "*",
+    "@deanacus/prettier-config": "*",
+    "esbuild": "^0.14.48",
+    "turbo": "1.3.1"
+  },
+  "eslintConfig": {
+    "extends": "@deanacus",
+    "ignorePatterns": [
+      "**/dist/*"
+    ],
+    "root": true
+  },
+  "prettier": "@deanacus/prettier-config"
 }

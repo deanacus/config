@@ -23,14 +23,8 @@ jobs:
       - name: Build Package
         run: yarn build
 
-      - name: Run Tests
+      - name: Calculate Test Coverage
         run: yarn test --scope @deanacus/prettier-config
 
-      - name: Validate Types
-        run: yarn type --scope @deanacus/prettier-config
-
-      - name: Validate Code Formatting
-        run: yarn style --scope @deanacus/prettier-config
-
-      - name: Validate Code Standards
-        run: yarn lint --scope @deanacus/prettier-config
+      - name: Validate Code
+        run: yarn validate --scope @deanacus/prettier-config

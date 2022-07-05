@@ -7,6 +7,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "coverage": "turbo run coverage --parallel",
     "test": "turbo run test --parallel",
     "validate": "turbo run validate --parallel --no-cache"
   },

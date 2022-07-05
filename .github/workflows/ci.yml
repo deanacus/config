@@ -1,9 +1,10 @@
-name: Eslint
+name: CI
 
 on:
+  push:
+    branches: ['main']
   pull_request:
-    paths:
-      - 'packages/eslint/**'
+    types: [opened, synchronize]
 
 jobs:
   setup:
@@ -13,15 +14,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
 
       - name: Install Node.js
         uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: 'npm'
 
       - name: Install Dependencies
-        run: yarn
+        run: npm ci
 
       - name: Build Package
-        run: yarn build
+        run: npm run build
+
+      - name: Calculate Test Coverage
+        run: npm run test
 
       - name: Validate Code
-        run: yarn validate --scope @deanacus/eslint-config
+        run: npm run validate

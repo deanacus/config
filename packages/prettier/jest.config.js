@@ -3,7 +3,7 @@ module.exports = {
     '^.+\\.ts$': 'esbuild-jest',
   },
   testPathIgnorePatterns: ['/node_modules/', '/__fixtures__/'],
-  collectCoverageFrom: ['src', '!**/__tests__/**', '!**/*.spec.*'],
+  collectCoverageFrom: ['src/*', '!*.spec.(t|j)sx?'],
   coverageThreshold: {
     global: {
       branches: 100,

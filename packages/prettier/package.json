@@ -13,28 +13,22 @@
   },
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc --noEmit && node ./scripts/build",
+    "build": "node ./scripts/build",
     "coverage": "jest --coverage",
-    "format": "prettier --write --ignore-path ../../.prettierignore --ignore-unknown ./",
-    "lint": "eslint",
-    "style": "prettier --check --ignore-path ../../.prettierignore --ignore-unknown ./",
-    "test": "jest",
-    "type": "tsc --noEmit"
+    "test": "jest --watch",
+    "validate": "tsc --noEmit && eslint && prettier --check --ignore-path --ignore-unknown ./src"
   },
   "devDependencies": {
-    "@deanacus/eslint-config": "^0.2.1",
-    "@deanacus/tsconfig": "^0.1.0",
-    "@types/jest": "^27.0.1",
-    "esbuild": "^0.12.25",
+    "@deanacus/tsconfig": "*",
+    "esbuild": "^0.14.48",
     "esbuild-jest": "^0.5.0",
-    "eslint": "^7.32.0",
-    "jest": "^27.1.0",
-    "jsonschema": "^1.4.0",
-    "prettier": "^2.5.1",
-    "typescript": "^4.4.2"
+    "jest": "^28.1.2",
+    "jsonschema": "^1.4.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
   },
   "peerDependencies": {
-    "prettier": "^2.5.1"
+    "prettier": ">=2.5"
   },
   "publishConfig": {
     "access": "public"

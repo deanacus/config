@@ -30,7 +30,7 @@ jobs:
         run: npm run build
 
       - name: Calculate Test Coverage
-        run: npm run test
+        run: npm run coverage
 
       - name: Validate Code
         run: npm run validate
